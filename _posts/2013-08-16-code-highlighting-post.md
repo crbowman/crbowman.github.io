@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Syntax Highlighting Post
-description: "Demo post displaying the various ways of highlighting code in Markdown."
-modified: 2014-12-23
-tags: [sample post, code, highlighting]
+title: Clojure Dendrology
+description: "Playing with trees and graphs in Clojure."
+modified: 2015-5-5-12-23
+tags: [clojure, algorithms, tree, graph, code]
 image:
-  feature: abstract-10.jpg
+  feature: bw_graph.jpg
   credit: dargadgetz
   creditlink: http://www.dargadgetz.com/ios-7-abstract-wallpaper-pack-for-iphone-5-and-ipod-touch-retina/
 ---
@@ -57,6 +57,22 @@ module Jekyll
     end
   end
 end
+{% endhighlight %}
+
+{% highlight clojure %}
+(defn binary-insert
+  "Insert val into binary tree at node root, if root is
+   not supplied create a new binary tree with one node"
+  ([val]
+     (struct binary-node nil val nil))
+  ([val root]
+     (cond
+      (not root)
+        (struct binary-node nil val nil)
+      (< val (root :val))
+        (assoc root :left (binary-insert val (root :left)))
+      (> val (root :val))
+        (assoc root :right (binary-insert val (root :right))))))
 {% endhighlight %}
 
 
