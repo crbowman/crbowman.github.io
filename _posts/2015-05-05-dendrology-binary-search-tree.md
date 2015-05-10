@@ -7,13 +7,17 @@ tags: [clojure, algorithms, tree, graph, code]
 image:
   feature: bw_graph.jpg
 ---
-### Binary Search Tree
+### Binary Search Trees
 
-A binary tree is a set of nodes each containing a value and a pointer to a left and right subtree that are themselves binary search trees. A binary search tree is a binary tree such that for every node *n* in the tree every value in the left subtree is less than or equal to the value of *n*, and every value in the right subtree is greater than the value of *n*.
+A binary tree is a set of nodes each containing a value and a pointer to a left and right subtree that are themselves binary search trees. A binary search tree(BST) is a binary tree such that for every node *n* in the tree every value in the left subtree is less than or equal to the value of *n*, and every value in the right subtree is greater than the value of *n*.
+
+To represent a binary search tree node in clojure we are going to define a struct with three keys, **:left**, **:val**, and **:right**.
 
 {% highlight clojure %}
 (defstruct binary-node :left :val :right)
 {% endhighlight %}
+
+Now that we have a way to create a tree node, we need a way to insert a new node into an existing BST. We're going to define a function called **binary-insert** that has two parameters, the value we want to insert, and the root of the BST we want to insert it into. However, if we don't supply an existing BST we want to create a new one with our value in the root node. 
 
 {% highlight clojure %}
 (defn binary-insert
