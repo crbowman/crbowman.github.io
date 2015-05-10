@@ -19,7 +19,7 @@ To represent a binary search tree node in clojure we are going to define a struc
 Now that we have a way to create a tree node, we need a way to insert a new node into an existing BST. We're going to define a function called **binary-insert** that has two parameters, the value we want to insert, and the root of the BST we want to insert it into. However, if we don't supply an existing BST we want to create a new one with our value in the root node. 
 
 When we're inserting into an existing tree we need to find the
-correct insertion point for the new element. we do this through a series of recursive calls, inserting the new element into the left subtree if the element is less than or equal to to root value and inserting into the right subtree otherwise. 
+correct insertion point for the new element. We do this through a series of recursive calls, inserting the new element into the left subtree if the element is less than or equal to to root value and inserting into the right subtree otherwise. 
 
 {% highlight clojure %}
 (defn binary-insert
@@ -37,6 +37,8 @@ correct insertion point for the new element. we do this through a series of recu
         (assoc root :right (binary-insert val (root :right))))))
 {% endhighlight %}
 
+Now that we have a way to insert elements into an existing tree we can use this to create a BST out of a vector of values. We create an empty tree and then loop through our vector of values, inserting each one into our tree. 
+
 {% highlight clojure %}
 (defn build-binary-tree [xs]
   "Builds a binary tree by iterating through xs, inserting
@@ -50,6 +52,8 @@ correct insertion point for the new element. we do this through a series of recu
         (recur (inc i)))))
   tree)
 {% endhighlight %}
+
+Now lets write a function that allows us to check a tree to make sure it adheres to the requirements of a BST. We're going to call this function *binary-insert?*, we use a question mark in the function name to signal that the funtion return a boolean value. 
 
 {% highlight clojure %}
 (defn binary-tree? [node]
