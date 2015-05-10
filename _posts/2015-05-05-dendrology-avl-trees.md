@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dendrology AVL Trees
+title: AVL Trees In Clojure
 description: "Creating our own binary search tree in Clojure"
 modified: 2015-5-5
 tags: [clojure, algorithms, tree, graph, code, AVL]

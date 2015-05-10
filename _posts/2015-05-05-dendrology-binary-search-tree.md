@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dendrology Binary Search Trees
+title: Binary Search Trees In Clojure
 description: "Creating our own binary search tree in Clojure"
 modified: 2015-5-5
 tags: [clojure, algorithms, tree, graph, code]
@@ -18,6 +18,8 @@ To represent a binary search tree node in clojure we are going to define a struc
 {% endhighlight %}
 
 Now that we have a way to create a tree node, we need a way to insert a new node into an existing BST. We're going to define a function called **binary-insert** that has two parameters, the value we want to insert, and the root of the BST we want to insert it into. However, if we don't supply an existing BST we want to create a new one with our value in the root node. 
+
+When we're inserting into an existing tree we need to make sure the 
 
 {% highlight clojure %}
 (defn binary-insert
