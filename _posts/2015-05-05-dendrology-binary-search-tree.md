@@ -7,12 +7,9 @@ tags: [clojure, algorithms, tree, graph, code]
 image:
   feature: bw_graph.jpg
 ---
-
-Syntax highlighting is a feature that displays source code, in different colors and fonts according to the category of terms. This feature facilitates writing in a structured language such as a programming language or a markup language as both structures and syntax errors are visually distinct. Highlighting does not affect the meaning of the text itself; it is intended only for human readers.[^1]
-
-[^1]: <http://en.wikipedia.org/wiki/Syntax_highlighting>
-
 ### Binary Search Tree
+
+A binary tree is a set of nodes each containing a value and a pointer to a left and right subtree that are themselves binary search trees. A binary search tree is a binary tree such that for every node *n* in the tree every value in the left subtree is less than or equal to the value of *n*, and every value in the right subtree is greater than the value of *n*.
 
 {% highlight clojure %}
 (defstruct binary-node :left :val :right)
