@@ -18,7 +18,8 @@ To represent a binary search tree node in clojure we are going to define a struc
 
 Now that we have a way to create a tree node, we need a way to insert a new node into an existing BST. We're going to define a function called **binary-insert** that has two parameters, the value we want to insert, and the root of the BST we want to insert it into. However, if we don't supply an existing BST we want to create a new one with our value in the root node. 
 
-When we're inserting into an existing tree we need to make sure the 
+When we're inserting into an existing tree we need to find the
+correct insertion point for the new element. we do this through a series of recursive calls, inserting the new element into the left subtree if the element is less than or equal to to root value and inserting into the right subtree otherwise. 
 
 {% highlight clojure %}
 (defn binary-insert
