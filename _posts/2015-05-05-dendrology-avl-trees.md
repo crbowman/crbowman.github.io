@@ -51,7 +51,6 @@ Syntax highlighting is a feature that displays source code, in different colors 
       (let [k2 (assoc k2 :height (inc (max (height (k2 :left))
                                            (height (k2 :right)))))
             k1 (assoc k1 :height (inc (max (height (k1 :left))
-
                                            (height k2))))]
         (assoc k1 :right k2)))))
 {% endhighlight %}
