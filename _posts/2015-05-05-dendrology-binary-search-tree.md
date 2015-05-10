@@ -8,6 +8,8 @@ image:
   feature: bw_graph.jpg
 ---
 
+## Binary Search Trees
+
 A binary tree is a set of nodes each containing a value and a pointer to a left and right subtree that are themselves binary search trees. A binary search tree(BST) is a binary tree such that for every node *n* in the tree every value in the left subtree is less than or equal to the value of *n*, and every value in the right subtree is greater than the value of *n*.
 
 To represent a binary search tree node in clojure we are going to define a struct with three keys, **:left**, **:val**, and **:right**.
@@ -53,7 +55,7 @@ Now that we have a way to insert elements into an existing tree we can use this 
   tree)
 {% endhighlight %}
 
-Now lets write a function that allows us to check a tree to make sure it adheres to the requirements of a BST. We're going to call this function *binary-insert?*, we use a question mark in the function name to signal that the funtion return a boolean value. 
+Now lets write a function that allows us to check a tree to make sure it adheres to the requirements of a BST. We're going to call this function *binary-insert?**, we use a question mark in the function name to signal that the funtion return a boolean value. 
 
 {% highlight clojure %}
 (defn binary-tree? [node]
