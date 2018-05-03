@@ -5,7 +5,7 @@ description: "Creating our own binary search tree in Clojure"
 modified: 2015-5-5
 tags: [clojure, algorithms, tree, graph, code]
 image:
-  feature: bw_graph.jpg
+  feature: generative-2.jpg
 ---
 ### Binary Search Trees
 
@@ -63,7 +63,7 @@ When we're inserting into an existing tree we need to make sure the
     (node :left)
       (and (> (node :val) ((node :left) :val))
            (binary-tree? (node :left)))
-    (node :right)  
+    (node :right)
       (and (< (node :val) ((node :right) :val))
            (binary-tree? (node :right)))
     (node :val)

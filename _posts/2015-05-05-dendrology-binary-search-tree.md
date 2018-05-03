@@ -5,7 +5,7 @@ description: "Creating our own binary search tree in Clojure"
 modified: 2015-5-5
 tags: [clojure, algorithms, tree, graph, code]
 image:
-  feature: bw_graph.jpg
+  feature: generative-1.jpg
 ---
 
 ## Binary Search Trees
