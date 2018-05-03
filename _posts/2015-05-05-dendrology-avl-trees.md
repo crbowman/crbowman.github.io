@@ -5,7 +5,7 @@ description: "Creating our own binary search tree in Clojure"
 modified: 2015-5-5
 tags: [clojure, algorithms, tree, graph, code, AVL]
 image:
-  feature: generative-trans-5.png
+  feature: generative-4.jpg
 ---
       
 ### AVL Trees

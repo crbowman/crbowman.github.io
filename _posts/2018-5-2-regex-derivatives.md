@@ -4,7 +4,7 @@ title: Regular Expression Derivatives
 modified: 2018-5-2
 tags: [clojure, algorithms, regex]
 image:
-  feature: abstract-3.jpg
+  feature: generative-2.jpg
 ---
 ## Regular Expression Derivatives 
 
