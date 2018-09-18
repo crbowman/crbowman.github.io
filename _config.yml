@@ -11,22 +11,22 @@ url:
 owner:
   name: Curtis Bowman
   avatar: avatar.jpg
-  bio: "Your bio goes here. It shouldn't be super long but a good sentence or two should suffice."
+  bio: "I'm a software developer who is passionate about functional programming and machine learning. In my spare time I enjoy playing Ultimate and whitewater kayaking. "
   email: c.bowman1711@gmail.com
   # Social networking links used in footer. Update and remove as you like.
   twitter:        
   facebook:       
   github: crbowman
   stackexchange:  
-  linkedin:       
-  instagram:      
+  linkedin: curtis-bowman
+  Instagram:      
   flickr:         
   tumblr:         
   # google plus id, include the '+', eg +mmistakes
   google_plus:
 
 # Background image to be tiled on all pages
-background: /images/generative-2.jpg
+background:
 
 # Analytics and webmaster tools stuff goes here
 google_analytics:   
@@ -39,7 +39,7 @@ timezone:    America/New_York
 future:      false  # publish future dated posts --  true, false (default) 
 highlighter: rouge
 markdown:    kramdown
-gems:
+plugins:
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-gist
