@@ -9,6 +9,7 @@ image:
 ---
       
 ### AVL Trees
+\**Work In Progress*\*
 
 {% highlight clojure %}
 (defn height [node]

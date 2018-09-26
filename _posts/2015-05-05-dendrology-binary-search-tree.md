@@ -9,6 +9,7 @@ image:
 ---
 
 ## Binary Search Trees
+\**Work In Progress*\*
 
 A binary tree is a set of nodes each containing a value and a pointer to a left and right subtree that are themselves binary search trees. A binary search tree(BST) is a binary tree such that for every node *n* in the tree every value in the left subtree is less than or equal to the value of *n*, and every value in the right subtree is greater than the value of *n*.
 
