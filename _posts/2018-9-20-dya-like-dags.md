@@ -1,6 +1,7 @@
 ---
 layout: post
 title: D'ya Like DAGs?
+description: "An example directed acyclic graph in Clojure."
 modified: 2018-5-2
 tags: [data structures, graphs, clojure]
 image:

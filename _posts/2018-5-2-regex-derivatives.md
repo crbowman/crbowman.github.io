@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Regular Expression Derivatives
+description: "Regular expression derivatives in Clojure."
 modified: 2018-5-2
 tags: [clojure, algorithms, regex]
 image:
